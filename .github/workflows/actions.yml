@@ -4,9 +4,9 @@ on: [push] # trigger on push
 
 jobs: 
 # name of job
-run-github-actions:
-  runs-on: ubuntu-lates #self-hosted
-  steps: 
+  run-github-actions:
+    runs-on: ubuntu-lates #self-hosted
+    steps: 
     - name: Simple JS Action #step name
       id: greet
       uses: actions/hello-world-javascript-action@v1 #like run, uses will take a reference to an action
