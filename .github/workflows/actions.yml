@@ -20,7 +20,7 @@ jobs:
 
       # to define an output, we should define another step (like ) and we will use run not uses
     - name: Log Greating time
-      run: echo "{{$steps.greet.outputs.time}}"
+      run: echo "${{ steps.greet.outputs.time }}"
 # we want to echo the reference of the action above(actions/hello...), so we need to reference the step before here
-# we will make it in run with "{{$steps.greet.outputs.time}}" with a variable which github make it available to us (steps)
+# we will make it in run with "${{ steps.greet.outputs.time }}" with a variable which github make it available to us (steps)
 # we should define an id to refernece certain steps
