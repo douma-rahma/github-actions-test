@@ -5,7 +5,7 @@ on: [push] # trigger on push
 jobs: 
 # name of job
   run-github-actions:
-    runs-on: ubuntu-lates #self-hosted
+    runs-on: ubuntu-latest #self-hosted
     steps: 
     - name: Simple JS Action #step name
       id: greet
